@@ -1,0 +1,588 @@
+/* CSS RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MAIN CSS */
+
+body {
+  background-color: hsla(204, 33%, 97%, 1);
+  display: block;
+  font-family: Lato;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 40px;
+  padding-block-end: 30px;
+  border-bottom: 2px solid hsla(204, 18%, 90%, 1);
+}
+
+.logo_d {
+  flex: 1;
+  /* background-color: blue; */
+  /* max-width: 70%; */
+  width: 200px;
+  height: 39px;
+  flex-shrink: 0;
+  margin-block-start: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 39px;
+}
+
+li {
+  padding-inline: 20px;
+}
+
+.links_norm {
+  display: flex;
+}
+
+.links {
+  color: hsla(211, 35%, 17%, 1);
+  text-decoration: none;
+  text-align: center;
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.01px;
+
+}
+
+.link_border {
+  padding-left: 19px;
+  padding-right: 20px;
+  padding-block-start: 11px;
+  padding-block-end: 12px;
+  color: hsla(211, 35%, 17%, 1);
+  text-decoration: none;
+  text-align: center;
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.01px;
+  width: 91px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 6px;
+border: 2px solid hsla(213, 10%, 44%, 1);
+align-self: center;
+}
+
+main {
+  background-color: hsla(0, 0%, 100%, 1);
+  display: flex;
+  flex-grow: 0;
+  min-height: 795px;
+  margin-inline-start: 262px;
+  margin-inline-end: 286px;
+  margin-block-start: 85px;
+  margin-block-end: 33px;
+  border-radius: 6px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+}
+
+/* LEFT STYLES */
+
+.left {
+  width: 65%;
+  flex-grow: 0;
+  /* background-color: blueviolet; */
+  padding-inline: 48px;
+  margin-block-start: 41px;
+}
+
+.right {
+  flex-shrink: 0;
+  background-color: hsla(204, 84%, 41%, 1);
+  width: 35%;
+}
+
+h1 {
+  color: hsla(211, 35%, 17%, 1);
+  width: 161px;
+  height: 54px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-block-end: 62px;
+}
+
+.border_bottom {
+  border-top: 2px solid hsla(216, 33%, 97%, 1);
+  margin-inline: -50px;
+  margin-block-start: -38px;
+  margin-block-end: 38px;
+}
+
+.border_bottom_2 {
+  border-top: 2px solid hsla(216, 33%, 97%, 1);
+  margin-inline: -50px;
+  margin-block-start: 0px;
+  margin-block-end: 35px;
+}
+
+.border_bottom_3 {
+  border-top: 2px solid hsla(216, 33%, 97%, 1);
+  margin-inline: -50px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.cc_field {
+  margin-block-end: 41px;
+}
+
+.email_field {
+  margin-block-end: 41px;
+}
+
+.info_label {
+  display: flex;
+  align-items: center;
+  margin-block-end: 9px;
+}
+
+.payment_info_label {
+  display: flex;
+  align-items: center;
+}
+
+.circle_con {
+  position: relative;
+}
+
+.circle_text {
+  position: absolute;
+  top: 3.5px;
+  left: 10.5px;
+  font: 16px;
+  color: hsla(211, 49%, 55%, 1);
+}
+
+.basic_text {
+  font-size: 18px;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.input_one {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 15px;
+}
+
+.input_one > div > input::placeholder {
+  padding-left: 13px;
+  padding-right: 27px;
+  padding-block-start: 9px;
+  padding-block-end: 10px;
+}
+
+.email_field > input::placeholder {
+  padding-left: 13px;
+  padding-right: 170px;
+  padding-block-start: 9px;
+  padding-block-end: 10px;
+}
+
+.cc_field > div > input::placeholder {
+  padding-left: 13px;
+  padding-right: 316px;
+  padding-block-start: 9px;
+  padding-block-end: 10px;
+}
+
+
+label {
+  display: block;
+  margin-block-end: 7px;
+}
+
+input {
+  width: 227px;
+  height: 36px;
+  outline: none;
+  border: none;
+  background-color: hsla(216, 16%, 94%, 1);
+}
+
+button {
+  width: 100%;
+  margin-block-start: 39px;
+  margin-block-end: 24px;
+  padding-block-start: 13px;
+  padding-block-end: 17px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsla(173, 96%, 28%, 1);
+  color: white;
+}
+
+.input_email {
+  width: 370px;
+}
+
+.card_info {
+  display: flex;
+}
+
+.card_no {
+  width: 390px;
+}
+
+.card_date {
+  width: 80px;
+}
+
+.card_cvc {
+  width: 50px;
+}
+
+.help_text {
+  display: flex;
+  padding-inline: 75px;
+  align-items: center;
+  margin-block-end: 31px;
+}
+
+.question_mark {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.need_help {
+  color: hsla(211, 35%, 17%, 1);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.full_help {
+  color: hsla(213, 10%, 44%, 1);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.stripe_logo {
+  margin-left: 197px;
+  margin-right: 194px;
+  margin-block-end: 46.9px;
+}
+
+/* RIGHT STYLES */
+
+.freelancer {
+  margin-left: 46px;
+  margin-block-start: 42px;
+  font-family: Lato;
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.dollar {
+  color: hsla(0, 0%, 100%, 1);
+  margin-left: 44px;
+  margin-block-start: 13px;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.015px;
+}
+
+.ninety_nine {
+  color: hsla(0, 0%, 100%, 1);
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.015px;
+}
+
+.ninety_combined {
+  color: hsla(0, 0%, 100%, 1);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.015px;
+}
+
+.yearly_price {
+  display: flex;
+}
+
+.renewal {
+  margin-block-start: 3px;
+  margin-block-end: 36px;
+  margin-left: 46px;
+  margin-right: 37px;
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.008px;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+}
+
+.benefits {
+  display: flex;
+  align-items: center;
+  margin-right: 95px;
+  margin-left: 45px;
+  margin-block-end: 16px;
+}
+
+.benefits_text {
+  margin-left: 11px;
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.008px;
+}
+
+.five {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.008px;
+}
+
+.need {
+  color: hsla(0, 0%, 100%, 1);
+  margin-block-start: 25px;
+  margin-left: 46px;
+  margin-right: 80px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.008px;
+}
+
+.need_twenty {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.008px;
+}
+
+.switch {
+  color: hsla(0, 0%, 100%, 1);
+  margin-block-start: 14px;
+  margin-left: 46px;
+  margin-right: 80px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.008px;
+}
+
+.agency {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.008px;
+}
+
+.agency_line {
+  margin-left: 46px;
+  margin-right: 86px;
+  width: 175px;
+  height: 4px;
+  flex-shrink: 0;
+  background: hsla(189, 100%, 86%, 0.5036);
+  border: none;
+  margin-block-start: -4px;
+  margin-block-end: 41px;
+}
+
+.border_line {
+  background: hsla(0, 0%, 100%, 0.2005);
+  margin-inline: 44px;
+  width: 224px;
+  height: 2px;
+  flex-shrink: 0;
+  border: none;
+}
+
+.ftp {
+  color: hsla(0, 0%, 100%, 1);
+  margin-left: 46px;
+  margin-right: 39px;
+  margin-block-start: 41px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.009px;
+}
+
+.wp {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.009px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-left: 44px;
+  margin-block-start: 17px;
+}
+
+.dp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author_name {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.008px;
+  margin-left: 14px;
+  padding-block-start: 10px;
+  padding-block-end: 11px;
+}
+
+.footer_text {
+  color: hsla(200, 6%, 41%, 1);
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-block-end: 139px;
+  /* margin-block-start: 913px; */
+  margin-left: 287px;
+  margin-right: 286px;
+}
+
+.terms {
+  color: hsla(200, 49%, 38%, 1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
