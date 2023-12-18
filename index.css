@@ -299,6 +299,7 @@ button {
   border-radius: 5px;
   background-color: hsla(173, 96%, 28%, 1);
   color: white;
+  cursor: pointer;
 }
 
 .input_email {
